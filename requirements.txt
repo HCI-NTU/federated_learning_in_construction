@@ -1,0 +1,12 @@
+# Stage 1: data preparation
+iterative-stratification>=0.1.9
+numpy>=1.24
+pyyaml>=6.0
+pillow>=10.0
+
+# Stage 3: FL + YOLO
+ultralytics>=8.4.0
+flwr>=1.20.0
+torch>=2.0
+# Optional: only needed if you use flwr.simulation (tests/test_fl_integration.py)
+# flwr[simulation]>=1.20.0   # installs ray

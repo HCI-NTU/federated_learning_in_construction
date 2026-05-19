@@ -1,0 +1,276 @@
+[
+  {
+    "unified_id": 1,
+    "unified_name": "worker",
+    "MOCS": {
+      "id": 1,
+      "name": "Worker"
+    },
+    "CIS": [
+      {
+        "id": 6,
+        "name": "people-helmet"
+      },
+      {
+        "id": 7,
+        "name": "people-no-helmet"
+      }
+    ],
+    "ACID": null,
+    "SODA": {
+      "id": 1,
+      "name": "person"
+    },
+    "notes": "SODA VOC XML uses <name>person</name>"
+  },
+  {
+    "unified_id": 2,
+    "unified_name": "excavator",
+    "MOCS": {
+      "id": 7,
+      "name": "Excavator"
+    },
+    "CIS": [
+      {
+        "id": 4,
+        "name": "excavator"
+      }
+    ],
+    "ACID": {
+      "id": 10,
+      "name": "excavator"
+    },
+    "SODA": null,
+    "notes": ""
+  },
+  {
+    "unified_id": 3,
+    "unified_name": "bulldozer",
+    "MOCS": {
+      "id": 6,
+      "name": "Bulldozer"
+    },
+    "CIS": [
+      {
+        "id": 2,
+        "name": "dozer"
+      }
+    ],
+    "ACID": {
+      "id": 9,
+      "name": "dozer"
+    },
+    "SODA": null,
+    "notes": ""
+  },
+  {
+    "unified_id": 4,
+    "unified_name": "wheel_loader",
+    "MOCS": {
+      "id": 9,
+      "name": "Loader"
+    },
+    "CIS": [
+      {
+        "id": 9,
+        "name": "wheel-loader"
+      }
+    ],
+    "ACID": {
+      "id": 7,
+      "name": "wheel_loader"
+    },
+    "SODA": null,
+    "notes": "ACID contains some mislabeled bulldozer instances"
+  },
+  {
+    "unified_id": 5,
+    "unified_name": "dump_truck",
+    "MOCS": {
+      "id": 8,
+      "name": "Truck"
+    },
+    "CIS": [
+      {
+        "id": 3,
+        "name": "dump-truck"
+      }
+    ],
+    "ACID": {
+      "id": 5,
+      "name": "dump_truck"
+    },
+    "SODA": null,
+    "notes": ""
+  },
+  {
+    "unified_id": 6,
+    "unified_name": "concrete_mixer_truck",
+    "MOCS": {
+      "id": 11,
+      "name": "Concrete mixer"
+    },
+    "CIS": [
+      {
+        "id": 5,
+        "name": "mixer"
+      }
+    ],
+    "ACID": {
+      "id": 2,
+      "name": "cement_truck"
+    },
+    "SODA": null,
+    "notes": "ACID name 'cement_truck' is misleading; it is a rotating drum mixer truck"
+  },
+  {
+    "unified_id": 7,
+    "unified_name": "roller_compactor",
+    "MOCS": {
+      "id": 5,
+      "name": "Roller"
+    },
+    "CIS": [
+      {
+        "id": 8,
+        "name": "roller"
+      }
+    ],
+    "ACID": {
+      "id": 8,
+      "name": "compactor"
+    },
+    "SODA": null,
+    "notes": ""
+  },
+  {
+    "unified_id": 8,
+    "unified_name": "tower_crane",
+    "MOCS": {
+      "id": 2,
+      "name": "Static crane"
+    },
+    "CIS": null,
+    "ACID": {
+      "id": 12,
+      "name": "tower_crane"
+    },
+    "SODA": null,
+    "notes": "MOCS Static crane includes at least one bridge girder launcher instance"
+  },
+  {
+    "unified_id": 9,
+    "unified_name": "mobile_crane",
+    "MOCS": {
+      "id": 4,
+      "name": "Crane"
+    },
+    "CIS": null,
+    "ACID": {
+      "id": 3,
+      "name": "mobile_crane"
+    },
+    "SODA": null,
+    "notes": ""
+  },
+  {
+    "unified_id": 10,
+    "unified_name": "concrete_pump_truck",
+    "MOCS": {
+      "id": 10,
+      "name": "Pump truck"
+    },
+    "CIS": null,
+    "ACID": null,
+    "SODA": null,
+    "notes": "Boom pump truck; distinct from concrete mixer truck"
+  },
+  {
+    "unified_id": 11,
+    "unified_name": "backhoe_loader",
+    "MOCS": null,
+    "CIS": null,
+    "ACID": {
+      "id": 11,
+      "name": "backhoe_loader"
+    },
+    "SODA": null,
+    "notes": "Distinct from wheel_loader and excavator"
+  },
+  {
+    "unified_id": 12,
+    "unified_name": "grader",
+    "MOCS": null,
+    "CIS": null,
+    "ACID": {
+      "id": 1,
+      "name": "grader"
+    },
+    "SODA": null,
+    "notes": ""
+  },
+  {
+    "unified_id": 13,
+    "unified_name": "pile_driver",
+    "MOCS": {
+      "id": 12,
+      "name": "Pile driving"
+    },
+    "CIS": null,
+    "ACID": null,
+    "SODA": null,
+    "notes": "Rotary drilling rig on excavator base"
+  },
+  {
+    "unified_id": 14,
+    "unified_name": "crane_hook",
+    "MOCS": {
+      "id": 3,
+      "name": "Hanging head"
+    },
+    "CIS": null,
+    "ACID": null,
+    "SODA": null,
+    "notes": "Crane hook/rigging block; component, not a vehicle"
+  },
+  {
+    "unified_id": 15,
+    "unified_name": "precast_panel_truck",
+    "MOCS": null,
+    "CIS": [
+      {
+        "id": 1,
+        "name": "PC-truck"
+      }
+    ],
+    "ACID": null,
+    "SODA": null,
+    "notes": "Flatbed truck transporting precast concrete panels"
+  },
+  {
+    "unified_id": 16,
+    "unified_name": "precast_panel",
+    "MOCS": null,
+    "CIS": [
+      {
+        "id": 0,
+        "name": "PC"
+      }
+    ],
+    "ACID": null,
+    "SODA": null,
+    "notes": "Precast concrete panel (material object, not a vehicle)"
+  },
+  {
+    "unified_id": 17,
+    "unified_name": "other_vehicle",
+    "MOCS": {
+      "id": 13,
+      "name": "Other vehicle"
+    },
+    "CIS": null,
+    "ACID": null,
+    "SODA": null,
+    "notes": "Catch-all for passenger cars / utility vehicles on site"
+  }
+]
