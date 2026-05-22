@@ -37,7 +37,7 @@
       }
     ],
     "ACID": {
-      "id": 10,
+      "id": 6,
       "name": "excavator"
     },
     "SODA": null,
@@ -57,7 +57,7 @@
       }
     ],
     "ACID": {
-      "id": 9,
+      "id": 4,
       "name": "dozer"
     },
     "SODA": null,
@@ -77,7 +77,7 @@
       }
     ],
     "ACID": {
-      "id": 7,
+      "id": 10,
       "name": "wheel_loader"
     },
     "SODA": null,
@@ -137,7 +137,7 @@
       }
     ],
     "ACID": {
-      "id": 8,
+      "id": 3,
       "name": "compactor"
     },
     "SODA": null,
@@ -152,7 +152,7 @@
     },
     "CIS": null,
     "ACID": {
-      "id": 12,
+      "id": 9,
       "name": "tower_crane"
     },
     "SODA": null,
@@ -167,7 +167,7 @@
     },
     "CIS": null,
     "ACID": {
-      "id": 3,
+      "id": 8,
       "name": "mobile_crane"
     },
     "SODA": null,
@@ -191,7 +191,7 @@
     "MOCS": null,
     "CIS": null,
     "ACID": {
-      "id": 11,
+      "id": 1,
       "name": "backhoe_loader"
     },
     "SODA": null,
@@ -203,7 +203,7 @@
     "MOCS": null,
     "CIS": null,
     "ACID": {
-      "id": 1,
+      "id": 7,
       "name": "grader"
     },
     "SODA": null,
