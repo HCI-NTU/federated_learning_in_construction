@@ -16,33 +16,31 @@ from pathlib import Path
 
 # Match the ACID category IDs from the unified schema
 ACID_CATEGORIES = [
-    {"id": 1, "name": "grader"},
+    {"id": 1, "name": "backhoe_loader"},
     {"id": 2, "name": "cement_truck"},
-    {"id": 3, "name": "mobile_crane"},
+    {"id": 3, "name": "compactor"},
+    {"id": 4, "name": "dozer"},
     {"id": 5, "name": "dump_truck"},
-    {"id": 7, "name": "wheel_loader"},
-    {"id": 8, "name": "compactor"},
-    {"id": 9, "name": "dozer"},
-    {"id": 10, "name": "excavator"},
-    {"id": 11, "name": "backhoe_loader"},
-    {"id": 12, "name": "tower_crane"},
+    {"id": 6, "name": "excavator"},
+    {"id": 7, "name": "grader"},
+    {"id": 8, "name": "mobile_crane"},
+    {"id": 9, "name": "tower_crane"},
+    {"id": 10, "name": "wheel_loader"},
 ]
 
 # Approximate per-class frequencies — common classes get more, rare classes less
-# These weights drive how often each class appears across images
 CLASS_WEIGHTS = {
-    10: 200,  # excavator: very common
+    6: 200,   # excavator: very common
     5: 150,   # dump_truck: very common
-    9: 100,   # dozer: common
-    8: 80,    # compactor: common
-    7: 70,    # wheel_loader: common
-    3: 40,    # mobile_crane: moderate
+    4: 100,   # dozer: common
+    3: 80,    # compactor: common
+    10: 70,   # wheel_loader: common
+    8: 40,    # mobile_crane: moderate
     2: 30,    # cement_truck: moderate
-    12: 20,   # tower_crane: less common
-    11: 12,   # backhoe_loader: rare
-    1: 8,     # grader: very rare
+    9: 20,    # tower_crane: less common
+    1: 12,    # backhoe_loader: rare
+    7: 8,     # grader: very rare
 }
-
 
 def generate(output_path: Path, n_images: int = 600, seed: int = 0) -> None:
     rng = random.Random(seed)
