@@ -353,19 +353,24 @@ pip install -r requirements.txt
 # 2. Run the experimental matrix (57 specs by default)
 python -m experiments.run_matrix \
     --data-root data \
-    --output-root work \
-    --results-root results \
+    --output-root work/EXP_N \
+    --results-root results/EXP_N \
+    --model-variant yolo11m.pt \
     --epochs 50 \
-    --model-variant yolo11s.yaml \
+    --num-rounds 20 \
+    --epochs-per-round 3 \
+    --warmup-epochs 0 \
+    --lr0 0.001 \
+    --optimizer AdamW \
     --imgsz 640 \
     --batch 16 \
-    --device cuda:0 \
-    --exp23-n 4000
+    --device 0 \
+    --seed 42
 
 # 3. Aggregate results into a single CSV
 python -m experiments.aggregate_results \
-    --results-root results \
-    --output-csv results/aggregated.csv
+    --results-root results/EXP_N \
+    --output-csv results/EXP_N/aggregated.csv
 ```
 
 The matrix driver is resumable — re-running the same command picks up
