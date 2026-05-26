@@ -353,11 +353,11 @@ pip install -r requirements.txt
 # 2. Run the experimental matrix (57 specs by default)
 python -m experiments.run_matrix \
     --data-root data \
-    --output-root work/EXP_N \
-    --results-root results/EXP_N \
+    --output-root work \
+    --results-root results \
     --model-variant yolo11m.pt \
-    --epochs 50 \
-    --num-rounds 20 \
+    --epochs 100 \
+    --num-rounds 33 \
     --epochs-per-round 3 \
     --warmup-epochs 0 \
     --lr0 0.001 \
@@ -365,7 +365,8 @@ python -m experiments.run_matrix \
     --imgsz 640 \
     --batch 16 \
     --device 0 \
-    --seed 42
+    --seed 42 \
+    --proximal-mu 0.01
 
 # 3. Aggregate results into a single CSV
 python -m experiments.aggregate_results \
